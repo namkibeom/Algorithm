@@ -1,9 +1,12 @@
 def solution(strings, n):
-    new = []
-    for i in strings :
-        new.append(i[n]+i)
-    new.sort()
-    answer = []
-    for i in new :
-        answer.append(i[1:])
-    return answer
+    answer=[]
+    answer2=[]
+    for s in strings :
+        answer.append(s[n]+s)
+        print(answer)
+    answer.sort()
+    for j in answer :
+        print(j[0])
+        answer2.append(j[1:])
+    print(answer2)
+    return answer2
